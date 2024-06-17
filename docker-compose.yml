@@ -1,0 +1,13 @@
+services:
+  mpdscribble:
+    container_name: "mpdscribble"
+    environment:
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "TZ=America/New_York"
+    hostname: "mpdscribble-docker"
+    image: "mpdscribble-docker:dev"
+    ipc: "private"
+    network_mode: "bridge"
+    restart: "unless-stopped"
+    volumes:
+      - "./mpdscribble.conf:/etc/mpdscribble.conf"
