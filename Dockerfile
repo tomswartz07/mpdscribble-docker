@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.20.3
 
 LABEL org.opencontainers.image.authors="Tom Swartz <tom@tswartz.net>" \
     org.opencontainers.image.title="MPDScribble" \
