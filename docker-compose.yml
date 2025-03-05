@@ -4,6 +4,8 @@ services:
     environment:
       - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
       - "TZ=America/New_York"
+      - "MPD_HOST=192.168.0.1"
+      - "MPD_PORT=6600"
     hostname: "mpdscribble-docker"
     image: "mpdscribble-docker:dev"
     ipc: "private"

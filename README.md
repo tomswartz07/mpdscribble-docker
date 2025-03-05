@@ -28,3 +28,7 @@ docker run --name mpdscribble \
 -v "./mpdscribble.conf:/etc/mpdscribble.conf"
 -d ghcr.io/tomswartz07/mpdscribble-docker:latest
 ```
+
+There's also a `docker-compose.yml` file which allows you to quickly and easily
+apply the changes. Simply update the file with the relevant MPD parameters and
+use `docker compose up -d` to deploy.
